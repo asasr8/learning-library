@@ -1,0 +1,8 @@
+172.16.120.001 - - [02/Jan/2022:18:34:16 +0000] "GET /articles/security HTTP/1.1" 200 8218 "-" "Java1.7.0_10"
+172.16.121.002 - - [02/Jan/2022:19:24:09 +0000] "POST /opt/orcl/secondary.xml HTTP/1.1" 200 4502 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:27.0) Gecko/20100101 Firefox/27.0"
+172.16.122.003 - - [02/Jan/2022:19:34:16 +0000] "GET /articles/analytics HTTP/1.1" 200 1518 "-" "Java1.7.0_10"
+172.16.124.005 - - [02/Jan/2022:19:48:56 +0000] "GET /articles/multimedia HTTP/1.1" 200 6247 "-" "Java1.7.0_10"
+172.16.125.006 - - [02/Jan/2022:19:51:49 +0000] "POST /opt/orcl/secondary.xml HTTP/1.1" 200 4502 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:27.0) Gecko/20100101 Firefox/27.0"
+172.16.126.007 - - [02/Jan/2022:20:11:28 +0000] "GET /articles/security HTTP/1.1" 200 8218 "-" "Java1.7.0_10"
+172.17.129.010 - - [03/Jan/2022:20:38:40 +0000] "PUT /user/input HTTP/1.1" 200 6842 "-" "Mozilla/5.0 (Windows NT 5.1; rv:6.0.2) Gecko/20200101 Firefox/6.0.2"
+172.18.131.012 - - [02/Jan/2022:21:44:09 +0000] "POST /opt/orcl/plugin.xml HTTP/1.1" 200 2202 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:27.0) Gecko/20100101 Firefox/27.0"
