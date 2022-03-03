@@ -12,11 +12,11 @@
             "filename": "https://raw.githubusercontent.com/oracle/learning-library/master/common/labs/cloud-login/pre-register-free-tier-account.md"
         },
         {
-            "title": "Lab 1: Setup",
+            "title": "Lab 1: Prepare Kubernetes input files",
             "filename": "../../2-prepare-inputs/prep.md"
         },
         {
-            "title": "Lab 2: Start Kubernetes Logs Collection",
+            "title": "Lab 2: Enable Logs and Kubernetes Objects Collection",
             "filename": "../../3-start-ingestion/ingest.md"
         },
         {
@@ -24,7 +24,7 @@
             "filename": "../../4-analysis/analysis.md"
         },
         {
-            "title": "Lab 4: Creating FluentD Container Image (Optional)",
+            "title": "Lab 4: Create FluentD Container Image (Optional)",
             "filename": "../../1-create-image/image.md"
         }
     ]
