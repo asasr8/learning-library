@@ -32,8 +32,13 @@ Once the deployment is completed using the yaml files , you can view the logs in
 
 ## **STEP 3**: Analyse the kubernetes object logs
 
+  1. Let us now view the object logs from OKE environment.
+  In the below example let us consider the Kubernetes ReplicaSet Object Logs ,
+  ![image](images/objects-log.png)
+  2. We can see the object log , from the log explorer view and get the details of the ReplicaSet.
+  ![image](images/replica-obj-log.png)
 
-
+  
 You may now [proceed to the next lab](#next).
 
 ## Learn More
