@@ -1,89 +1,72 @@
 
 # Introduction
 
-## Introduction well done!
-
-This lab walks you through the steps to ...
+This lab walks you through the steps to create a docker image.
+Once we have a docker image it can be then pushed to OCIR registry.
 
 Estimated Lab Time: n minutes
 
 
-### Objectives
+## Objectives
 
 
 In this lab, you will:
 * Create Docker File for creating FluentD container image with Logging Analytics output plugin
-* Setup container registry to upload image in your OCI tenancy
-* Create and push container image to your container registry
-
-### Prerequisites
-
-* Same as specified in the introduction section
+* Push the container image to your container registry / OCIR
 
 
-## **STEP 1**: title
-
-Step 1 opening paragraph.
-
-1. Sub step 1
-
-  To create a link to local file you want the reader to download, use this format:
-
-  Download the [starter file](files/starter-file.sql) SQL code.
-
-  *Note: do not include zip files, CSV, PDF, PSD, JAR, WAR, EAR, bin or exe files - you must have those objects stored somewhere else. We highly recommend using Oracle Cloud Object Store and creating a PAR URL instead. See [Using Pre-Authenticated Requests](https://docs.cloud.oracle.com/en-us/iaas/Content/Object/Tasks/usingpreauthenticatedrequests.htm)*
-
-2. Sub step 2 with image and link to the text description below. The `sample1.txt` file must be added to the `files` folder.
-
-    ![Image alt text](images/sample1.png "Image title")
-
-3. Ordered list item 3 with the same image but no link to the text description below.
-
-    ![Image alt text](images/sample1.png)
-
-4. Example with inline navigation icon ![Image alt text](images/sample2.png) click **Navigation**.
-
-5. One example with bold **text**.
-
-   If you add another paragraph, add 3 spaces before the line.
-
-## **STEP 2:** title
-
-1. Sub step 1
-
-  Use tables sparingly:
-
-  | Column 1 | Column 2 | Column 3 |
-  | --- | --- | --- |
-  | 1 | Some text or a link | More text  |
-  | 2 |Some text or a link | More text |
-  | 3 | Some text or a link | More text |
-
-2. You can also include bulleted lists - make sure to indent 4 spaces:
-
-    - List item 1
-    - List item 2
-
-3. Code examples
-
-    ```
-    Adding code examples
-  	Indentation is important for the code example to appear inside the step
-    Multiple lines of code
-  	<copy>Enclose the text you want to copy in <copy></copy>.</copy>
-    ```
-
-4. Code examples that include variables
-
-	```
-  <copy>ssh -i <ssh-key-file></copy>
+## **STEP 1**: Create a docker image
+  Below are the steps to create a docker image.
   ```
+  # Change directory to docker-image
+  cd docker-image/
 
-You may now [proceed to the next lab](#next).
+  # Build the docker image, you may use name of your choice for the image name (fluentd_loganalytics)
+  docker build -t fluentd_loganalytics -f Dockerfile .
+  ```
+  NOTE : The sample config files can be found [here](https://confluence.oci.oraclecorp.com/download/attachments/547589578/fluentd-kubernetes-daemonset-logging_analytics.zip?version=3&modificationDate=1626448288481&api=v2)
 
-## Learn More
+## **STEP 2**: Push the image to registry
+  Below are the steps to push the image.
+  ```
+  $ docker login phx.ocir.io
+  Username: xyz/oracle/ASHWINI.A.R@ORACLE.COM
+  Password:
+  Login Succeeded
 
-* [URL text 1](http://docs.oracle.com)
+  # To view the image built from local repo
+  $ docker image ls |grep fluend_loganalytics
+  fluend_loganalytics                            latest    b089c74670bc   2 seconds ago   398MB
+
+  # To Push the Image to a Docker registry, first tag using the registry info.
+  # Tag the image. tag looks like, <container-registry>/<Namespace/UserId>/<repo_name>:<version>
+  docker tag fluentd_loganalytics:latest <tag>
+  $ docker tag fluentd_loganalytics:latest phx.ocir.io/xyz/kube-la-demo:latest
+
+  # Push the image to the registry.
+  $ docker push phx.ocir.io/xyz/la-fleuntd:new
+  The push refers to repository [phx.ocir.io/xyz/la-fleuntd]
+  bb17d51da672: Pushed
+  6946e6af4474: Pushed
+  ba8219b7f775: Pushed
+  39f7df7b5780: Pushed
+  8c5c0b738f1a: Pushed
+  703ecfb5c55a: Pushed
+  c7906f515a8d: Pushed
+  facc4df3ad34: Pushed
+  49608a986d4b: Pushed
+  1a557862c9e3: Pushed
+  e0f000aa4b6c: Pushed
+  57e7a4ab5e92: Pushed
+  ae3be1de02e7: Pushed
+  a3227ae5fd99: Pushed
+  943b74aafeae: Pushed
+  ea26b3b86ad5: Pushed
+  476baebdfbf7: Pushed
+  new: digest: sha256:75afdc123507e4c64e9142dfcdc2b0bd2c4abee1b041cf710999e59c14e8f9b4 size: 3868
+  ```
+  NOTE : The above is an example tag/push commands reference for OCIR Registry in IAD with namespace xyz.
+
 
 ## Acknowledgements
 * **Author** - Ashwini R, Senior Member of Technical Staff

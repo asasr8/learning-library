@@ -38,6 +38,8 @@ This approach is the proposed collection mechanism to collect the following type
 
 Steps on how to build docker image is present in Lab 4.
 
+You may now [proceed to the next lab](#next).
+
 ## Learn More
 
 * [Product Documentation](https://docs.oracle.com/en-us/iaas/logging-analytics/index.html)

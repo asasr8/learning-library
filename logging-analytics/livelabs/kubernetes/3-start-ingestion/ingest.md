@@ -38,15 +38,9 @@ Once the deployment is completed using the yaml files , you can view the logs in
   2. We can see the object log , from the log explorer view and get the details of the ReplicaSet.
   ![image](images/replica-obj-log.png)
 
-  
+
 You may now [proceed to the next lab](#next).
 
-## Learn More
-
-* Link to github for sample helm charts
-
-* [URL text 1](http://docs.oracle.com)
-* [URL text 2](http://docs.oracle.com)
 
 ## Acknowledgements
 * **Author** - Ashwini R, Senior Member of Technical Staff

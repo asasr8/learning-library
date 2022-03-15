@@ -21,7 +21,7 @@
         },
         {
             "title": "Lab 3: Search and Analyze Kubernetes Logs",
-            "filename": "../../4-analysis/analysis.md"
+            "filename": "../../4-analysis/analyze.md"
         },
         {
             "title": "Lab 4: Create FluentD Container Image (Optional)",
