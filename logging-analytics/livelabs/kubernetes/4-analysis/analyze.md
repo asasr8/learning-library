@@ -19,24 +19,8 @@ In this lab, you will:
 * Same as specified in the introduction section
 
 
-## **STEP 1**: Create a docker image
+## **STEP 1**:
 
-The plan is to create Docker Base Images (for various Fluentd versions) containing [Fluentd](https://www.fluentd.org/), [Logging Analytics fluentd output plugin](https://docs.oracle.com/en/learn/oci_logging_analytics_fluentd/) and other dependent plugins/gems, along with out of the box configuration for both Linux System Logs and OKE System/Service Logs.
-The following deployment mechanisms are being planned to support,
-
-  - Kubectl based deployment through sample deployment yaml configuration(s).
-      - Each Deployment yaml configuration contains Fluentd config as config map and required docker image pre-filled an targeted for a specific version of Fluentd and Kubernetes.
-  - Helm charts.
-      - Customer would get an option to enable all other container logs (say application) in /var/log/containers using a default source, they could either choose this and modify the configuration as required (OR) they may need to modify the fluentd configuration to include the necessary log files to monitor on demand.
-
-**OCI ServiceConnector (using Logging as Source and Logging Analytics as destination) based Log collection**
-
-This approach is the proposed collection mechanism to collect the following type of logs,
-  - OCI Service Logs integrated with OKE
-  - API Server Audit Logs
-  - OKE Control Plane Logs
-
-Steps on how to build docker image is present in Lab 4.
 
 You may now [proceed to the next lab](#next).
 
