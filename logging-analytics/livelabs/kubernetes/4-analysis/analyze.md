@@ -1,9 +1,7 @@
 
 # Introduction
 
-## Introduction well done!
-
-This lab walks you through the steps to ...
+This lab walks you through the steps to search and analyse the logs of OKE using Dashboard.
 
 Estimated Lab Time: n minutes
 
@@ -19,8 +17,7 @@ In this lab, you will:
 * Same as specified in the introduction section
 
 
-## **STEP 1**:
-
+## **STEP 1**:Dashboards
 
 You may now [proceed to the next lab](#next).
 
