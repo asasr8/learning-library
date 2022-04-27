@@ -8,16 +8,18 @@ Estimated Lab Time: n minutes
 ### Objectives
 
 In this lab, you will:
-* Objective 1
-* Objective 2
-* Objective 3
+* Overview of Dashboard.
+* Unified Dashboard with O&M services.
+* Analyse OKE logs from Dashboard using Logging Analytics.
 
 ### Prerequisites
 
 * Same as specified in the introduction section
 
 
-## **STEP 1**:Dashboards
+## **STEP 1**:Overview of Dashboard
+
+
 
 You may now [proceed to the next lab](#next).
 
