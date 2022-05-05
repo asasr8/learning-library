@@ -25,12 +25,12 @@ More details can be found [here](https://docs.oracle.com/en-us/iaas/logging-anal
 ## **STEP 2** : Unified Dashboard with O&M services
 
 With the help of management dashboard we can create unified dashboard with all the O&M services this helps in making use of the features of O&M services which helps in analyzing the issues in the OKE environment in a more holistic way.
-Below is the dashboard with all the OKE services for analysing OKE environments.
+Below is the sample dashboard with all the OKE services for analysing OKE environments.
 ![image](images/OKE_overview.png)
 
 ## **STEP 3** : Analyse OKE logs from Dashboard using Logging Analytics
 
-Let us consider the dashboard from the Overview Dashboard.See the screenshot [above](images/OKE_overview.png)
+Let us consider the sample dashboard shown from the Overview of Dashboard section.
 In that the IT Operations section is created using Logging Analytics service.
 For the OKE environment it displays the Number of Pods running , the Number of Nodes ,Customer Registrations and the Customer Logins.
 Let us now click on the Pods Running link from the dashboard.It opens up the below dashboard which is Logging analytics service specific.
